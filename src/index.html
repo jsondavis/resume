@@ -190,17 +190,46 @@ li {
 
 @media print {
   body { 
+    line-height: 1.1rem;
     margin: 0;
+    padding: 5mm;
   }
 
   .resume-container {
     margin: 0;
-    overflow: hidden;
+    /**
+     * overflow: hidden; 
+     * page-break-after: always; 
+     **/
     position: relative;
     box-sizing: border-box;
-    page-break-after: always;
     width: 216mm;
     height: 279mm;
+  }
+
+  header {
+    padding-bottom: .75rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .job-title {
+    padding-top: .25rem;
+  }
+
+  section {
+    margin-bottom: 1.1rem;
+  }
+
+  .skills-grid {
+    gap: .2rem 1rem;
+  }
+
+  .entry {
+    break-inside: avoid;
+  }
+
+  .entry:nth-last-child(2) {
+    padding-top: 5mm;
   }
 
   /** Padding area **/
@@ -249,7 +278,7 @@ li {
       
       <section class="summary">
         <h2>Professional Summary</h2>
-        <p>Multidiscipline software engineer adept at learning new technologies and solving complex system challenges. Experienced at collaborating in agile 3 to 7 person engineering teams and across external departments to build and maintain high-performing backend services, cloud infrastructure, web applications, and EDI integration platforms.
+        <p>Versatile full stack software engineer adept at learning new technologies and solving complex challenges. Experienced at collaborating in agile 3 to 7 person engineering teams and across departments to build and maintain performant web applications and backend services.
 </p>
       </section>
       
@@ -282,16 +311,16 @@ li {
             <span>EEL Datasystems</span>
           </div>
           <div class="entry-subheader">
-            <span>Software Engineer</span>
+            <span>Contract Software Engineer</span>
             <span class="date-location">Apr 2026 – Present</span>
           </div>
           <ul>
             
-            <li>Collaborate within a 5-person engineering team to maintain and optimize EEL&#39;s EDI interchange server and SFTP servers for mission-critical business transactions.</li>
+            <li>Collaborate within a 5-person engineering team to maintain and optimize EEL&#39;s EDI and SFTP servers for critical business transactions.</li>
             
             <li>Streamlined production release processes, delivering the first EDI API production deployment within 3 months and establishing a consistent weekly/bi-weekly deployment cadence.</li>
             
-            <li>Lead the infrastructure migration of EDI server caching environments from Redis Cloud to Amazon ElastiCache to increase availability and reliability.</li>
+            <li>Lead the infrastructure migration of EDI server caching environments from Redis Cloud to Amazon ElastiCache to maintain availability while reducing costs.</li>
             
             <li>Enhance API server performance and customer-facing web user interfaces to elevate overall product experience.</li>
             
@@ -308,11 +337,11 @@ li {
           </div>
           <ul>
             
-            <li>Scheduled crews and trucks for approximately 20 moving and packing jobs per month.</li>
+            <li>Managed logistics including staff, supplies, and trucks for approx 20 moving or packing jobs per month.</li>
             
-            <li>Managed website and phone services.</li>
+            <li>Maintained website and phone services for brand visibility and customer communication.</li>
             
-            <li>Managed Meta and Google ads.</li>
+            <li>Managed Meta and Google ads to maintain brand presence and customer visibility.</li>
             
           </ul>
         </article>
@@ -408,7 +437,7 @@ li {
             <span>University of Georgia</span>
           </div>
           <div class="entry-subheader">
-            <span>Bachelor of Science (B.S.) in Biology 2007</span>
+            <span>Bachelor of Science (B.S.) in Biology - 2007</span>
           </div>
         </article>
         

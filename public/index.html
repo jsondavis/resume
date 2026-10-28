@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Jason S. Davis</title>
+  <style>
+    *, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-main: -apple-system, BlinkMacSystemFont, &#34;Segoe UI&#34;, Roboto, Helvetica, Arial, sans-serif;
+  --text-color: #222222;
+  --heading-color: #0f172a;
+  --accent-color: #1e293b;
+  --border-color: #cbd5e1;
+  --bg-color: #ffffff;
+  --line-height: 1.5;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-color);
+  background-color: #f8fafc;
+  line-height: var(--line-height);
+  font-size: 10.5pt;
+  padding: 2rem 1rem;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  padding: 3rem 3.5rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  border-bottom: 2px solid var(--heading-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  font-size: 22pt;
+  color: var(--heading-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+header .job-title {
+  font-size: 12pt;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 0.75rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 9.5pt;
+}
+
+.contact-info a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info span::after {
+  content: &#34; • &#34;;
+  margin-left: 1rem;
+  color: var(--border-color);
+}
+
+.contact-info span:last-child::after {
+  content: &#34;&#34;;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 12pt;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--heading-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.summary p {
+  margin-bottom: 0.5rem;
+}
+
+.entry {
+  margin-bottom: 1.25rem;
+}
+
+.entry:last-child {
+  margin-bottom: 0;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: bold;
+  font-size: 10.5pt;
+}
+
+.entry-subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-style: italic;
+  color: #475569;
+  font-size: 10pt;
+  margin-bottom: 0.35rem;
+}
+
+.date-location {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 9.5pt;
+  color: #475569;
+  white-space: nowrap;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
+  font-size: 10pt;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+  font-size: 10pt;
+}
+
+.skill-category {
+  font-weight: bold;
+  color: var(--heading-color);
+}
+
+@media print {
+  body {
+    background-color: #ffffff;
+    padding: 0;
+  }
+
+  .resume-container {
+    box-shadow: none;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @page {
+    margin: 0.6in 0.6in 0.6in 0.6in;
+  }
+}
+
+
+    
+@page { 
+  margin: 0;
+}
+
+@media print {
+  body { 
+    line-height: 1.1rem;
+    margin: 0;
+    padding: 5mm;
+  }
+
+  .resume-container {
+    margin: 0;
+    /**
+     * overflow: hidden; 
+     * page-break-after: always; 
+     **/
+    position: relative;
+    box-sizing: border-box;
+    width: 216mm;
+    height: 279mm;
+  }
+
+  header {
+    padding-bottom: .75rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .job-title {
+    padding-top: .25rem;
+  }
+
+  section {
+    margin-bottom: 1.1rem;
+  }
+
+  .skills-grid {
+    gap: .2rem 1rem;
+  }
+
+  .entry {
+    break-inside: avoid;
+  }
+
+  .entry:nth-last-child(2) {
+    padding-top: 5mm;
+  }
+
+  /** Padding area **/
+  .resume-container.padding-10mm { padding: 10mm }
+  .resume-container.padding-15mm { padding: 15mm }
+  .resume-container.padding-20mm { padding: 20mm }
+  .resume-container.padding-25mm { padding: 25mm }
+}
+
+/** For screen preview **/
+@media screen {
+  body { 
+    background: #e0e0e0;
+  }
+
+  .resume-container {
+    background: white;
+    box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
+    margin: 5mm auto;
+  }
+}
+
+/** Fix for Chrome issue #273306 **/
+@media print {
+  body { 
+    width: 216mm;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+
+    <header>
+      <h1>Jason S. Davis</h1>
+      <div class="job-title">Software Engineer</div>
+      <div class="contact-info">
+        <span>(912) 224-9571</span>
+        <span><a href="mailto:jason@notthatjason.com">jason@notthatjason.com</a></span>
+        <span><a href="https://github.com/jsondavis">https://github.com/jsondavis</a></span>
+      </div>
+    </header>
+
+    <main>
+      
+      <section class="summary">
+        <h2>Professional Summary</h2>
+        <p>Versatile full stack software engineer adept at learning new technologies and solving complex challenges. Experienced at collaborating in agile 3 to 7 person engineering teams and across departments to build and maintain performant web applications and backend services.
+</p>
+      </section>
+      
+
+      
+      <section class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+          
+          <div class="skill-category">Languages:</div>
+          <div>JavaScript (ES6+), TypeScript, Golang, Python, PHP, CSS3, SCSS, LESS</div>
+          
+          <div class="skill-category">Frameworks &amp; Tools:</div>
+          <div>React, Vue.js, NestJS, ExpressJS, Django, Webpack, Gulp, D3</div>
+          
+          <div class="skill-category">Infrastructure &amp; Cloud:</div>
+          <div>Docker, AWS (ElastiCache), MongoDB, PostgreSQL, Git, GitLab CI</div>
+          
+        </div>
+      </section>
+      
+
+      
+      <section class="experience">
+        <h2>Professional Experience</h2>
+
+        
+        <article class="entry">
+          <div class="entry-header">
+            <span>EEL Datasystems</span>
+          </div>
+          <div class="entry-subheader">
+            <span>Contract Software Engineer</span>
+            <span class="date-location">Apr 2026 – Present</span>
+          </div>
+          <ul>
+            
+            <li>Collaborate within a 5-person engineering team to maintain and optimize EEL&#39;s EDI and SFTP servers for critical business transactions.</li>
+            
+            <li>Streamlined production release processes, delivering the first EDI API production deployment within 3 months and establishing a consistent weekly/bi-weekly deployment cadence.</li>
+            
+            <li>Lead the infrastructure migration of EDI server caching environments from Redis Cloud to Amazon ElastiCache to maintain availability while reducing costs.</li>
+            
+            <li>Enhance API server performance and customer-facing web user interfaces to elevate overall product experience.</li>
+            
+          </ul>
+        </article>
+        
+        <article class="entry">
+          <div class="entry-header">
+            <span>Fully Involved Logistics, LLC.</span>
+          </div>
+          <div class="entry-subheader">
+            <span>Operations Manager</span>
+            <span class="date-location">March 2025 – April 2026</span>
+          </div>
+          <ul>
+            
+            <li>Managed logistics including staff, supplies, and trucks for approx 20 moving or packing jobs per month.</li>
+            
+            <li>Maintained website and phone services for brand visibility and customer communication.</li>
+            
+            <li>Managed Meta and Google ads to maintain brand presence and customer visibility.</li>
+            
+          </ul>
+        </article>
+        
+        <article class="entry">
+          <div class="entry-header">
+            <span>Montra Technologies Inc.</span>
+          </div>
+          <div class="entry-subheader">
+            <span>Senior Software Engineer</span>
+            <span class="date-location">Sep 2022 – Sep 2024</span>
+          </div>
+          <ul>
+            
+            <li>Partnered within a 3-person engineering team to enhance the Montra VIA platform, an internal IT management tool powered by NestJS, Vue.js, and PostgreSQL.</li>
+            
+            <li>Led the development of custom shipping and IT integration services across platform architectures.</li>
+            
+            <li>Introduced UI testing initiatives to maintain high system reliability, responsiveness, and seamless user experiences.</li>
+            
+          </ul>
+        </article>
+        
+        <article class="entry">
+          <div class="entry-header">
+            <span>Vecima Technology Inc.</span>
+          </div>
+          <div class="entry-subheader">
+            <span>Software Engineer</span>
+            <span class="date-location">Jul 2021 – Sep 2022</span>
+          </div>
+          <ul>
+            
+            <li>Worked as part of a 3-person development team to maintain and update the IQ platform’s Golang backend and ReactJS frontend.</li>
+            
+            <li>Managed containerized local Docker development environments and automated GitLab CI pipelines for efficient development and delivery workflows.</li>
+            
+            <li>Contributed to internal service analytics and testing frameworks to significantly boost system monitoring capabilities.</li>
+            
+          </ul>
+        </article>
+        
+        <article class="entry">
+          <div class="entry-header">
+            <span>Scientific Games Corporation</span>
+          </div>
+          <div class="entry-subheader">
+            <span>Advanced Software Engineer</span>
+            <span class="date-location">Mar 2015 – Jul 2021</span>
+          </div>
+          <ul>
+            
+            <li>Collaborated in a 7-person software engineering team alongside an external art agency to build both high-turnaround 3-month promotional campaign sites and long-term production platforms using ReactJS, Webpack, PostCSS, and GatsbyJS.</li>
+            
+            <li>Engineered and maintained multi-year, high-traffic production assets including mobile applications and state lottery &#34;Bonus Zone&#34; second-chance entry sites.</li>
+            
+            <li>Maintained and updated ExpressJS authentication and game-content hosting servers across long-term production platforms.</li>
+            
+            <li>Managed containerized local Docker environments and researched optimized deployment channels for game servers and promotional builds.</li>
+            
+          </ul>
+        </article>
+        
+        <article class="entry">
+          <div class="entry-header">
+            <span>Turnstile Publishing Company</span>
+          </div>
+          <div class="entry-subheader">
+            <span>Web Developer</span>
+            <span class="date-location">Feb 2013 – Mar 2015</span>
+          </div>
+          <ul>
+            
+            <li>Worked on a 3-person development team to create cross-platform mobile web applications for Golfweek and Golfstat using AngularJS deployed to iOS and Android via PhoneGap.</li>
+            
+            <li>Extended functionality of backend application components utilizing ExpressJS and Django.</li>
+            
+            <li>Managed user agent operations including publishing and maintaining app submissions on the iTunes App Store and Google Play Store.</li>
+            
+          </ul>
+        </article>
+        
+      </section>
+      
+
+      
+      <section class="education">
+        <h2>Education</h2>
+
+          
+        <article class="entry">
+          <div class="entry-header">
+            <span>University of Georgia</span>
+          </div>
+          <div class="entry-subheader">
+            <span>Bachelor of Science (B.S.) in Biology - 2007</span>
+          </div>
+        </article>
+        
+      </section>
+      
+    </main>
+  </div>
+</body>
+</html>
