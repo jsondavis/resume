@@ -1,0 +1,73 @@
+name: "Jason S. Davis"
+title: "Software Engineer"
+phone: "(912) 224-9571"
+email: "jason@notthatjason.com"
+github: "https://github.com/jsondavis"
+
+summary: >
+  Multidiscipline software engineer adept at learning new technologies and solving complex system challenges.
+  Experienced at collaborating in agile 3 to 7 person engineering teams and across external departments to build
+  and maintain high-performing backend services, cloud infrastructure, web applications, and EDI integration platforms.
+
+skills:
+  - category: "Languages"
+    items: "Golang, Python, JavaScript (ES6+), TypeScript, PHP, CSS3, SCSS, LESS"
+  - category: "Frameworks & Tools"
+    items: "React, Vue.js, NestJS, ExpressJS, Gatsby, Django, Webpack, Gulp, D3"
+  - category: "Infrastructure & Cloud"
+    items: "Docker, AWS (ElastiCache), Redis Cloud, Nginx, MongoDB, PostgreSQL, Git, GitLab CI"
+
+experience:
+  - company: "EEL Datasystems"
+    title: "Software Engineer"
+    dates: "Apr 2026 – Present"
+    highlights:
+      - "Collaborate within a 5-person engineering team to maintain and optimize EEL's EDI interchange server and SFTP servers for mission-critical business transactions."
+      - "Streamlined production release processes, delivering the first EDI API production deployment within 3 months and establishing a consistent weekly/bi-weekly deployment cadence."
+      - "Lead the infrastructure migration of EDI server caching environments from Redis Cloud to Amazon ElastiCache to increase availability and reliability."
+      - "Enhance API server performance and customer-facing web user interfaces to elevate overall product experience."
+
+  - company: "Fully Involved Logistics, LLC."
+    title: "Operations Manager"
+    dates: "March 2025 – April 2026"
+    highlights:
+      - "Scheduled crews and trucks for approximately 20 moving and packing jobs per month."
+      - "Managed website and phone services."
+      - "Managed Meta and Google ads."
+
+  - company: "Montra Technologies Inc."
+    title: "Senior Software Engineer"
+    dates: "Sep 2022 – Sep 2024"
+    highlights:
+      - "Partnered within a 3-person engineering team to enhance the Montra VIA platform, an internal IT management tool powered by NestJS, Vue.js, and PostgreSQL."
+      - "Led the development of custom shipping and IT integration services across platform architectures."
+      - "Introduced UI testing initiatives to maintain high system reliability, responsiveness, and seamless user experiences."
+
+  - company: "Vecima Technology Inc."
+    title: "Software Engineer"
+    dates: "Jul 2021 – Sep 2022"
+    highlights:
+      - "Worked as part of a 3-person development team to maintain and update the IQ platform’s Golang backend and ReactJS frontend."
+      - "Managed containerized local Docker development environments and automated GitLab CI pipelines for efficient development and delivery workflows."
+      - "Contributed to internal service analytics and testing frameworks to significantly boost system monitoring capabilities."
+
+  - company: "Scientific Games Corporation"
+    title: "Advanced Software Engineer"
+    dates: "Mar 2015 – Jul 2021"
+    highlights:
+      - "Collaborated in a 7-person software engineering team alongside an external art agency to build both high-turnaround 3-month promotional campaign sites and long-term production platforms using ReactJS, Webpack, PostCSS, and GatsbyJS."
+      - "Engineered and maintained multi-year, high-traffic production assets including mobile applications and state lottery \"Bonus Zone\" second-chance entry sites."
+      - "Maintained and updated ExpressJS authentication and game-content hosting servers across long-term production platforms."
+      - "Managed containerized local Docker environments and researched optimized deployment channels for game servers and promotional builds."
+
+  - company: "Turnstile Publishing Company"
+    title: "Web Developer"
+    dates: "Feb 2013 – Mar 2015"
+    highlights:
+      - "Worked on a 3-person development team to create cross-platform mobile web applications for Golfweek and Golfstat using AngularJS deployed to iOS and Android via PhoneGap."
+      - "Extended functionality of backend application components utilizing ExpressJS and Django."
+      - "Managed user agent operations including publishing and maintaining app submissions on the iTunes App Store and Google Play Store."
+
+education:
+  - school: "University of Georgia"
+    degree: "Bachelor of Science (B.S.) in Biology"
