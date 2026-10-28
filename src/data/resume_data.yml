@@ -5,35 +5,35 @@ email: "jason@notthatjason.com"
 github: "https://github.com/jsondavis"
 
 summary: >
-  Multidiscipline software engineer adept at learning new technologies and solving complex system challenges.
-  Experienced at collaborating in agile 3 to 7 person engineering teams and across external departments to build
-  and maintain high-performing backend services, cloud infrastructure, web applications, and EDI integration platforms.
+  Versatile full stack software engineer adept at learning new technologies and solving complex challenges.
+  Experienced at collaborating in agile 3 to 7 person engineering teams and across departments to build
+  and maintain performant web applications and backend services.
 
 skills:
   - category: "Languages"
-    items: "Golang, Python, JavaScript (ES6+), TypeScript, PHP, CSS3, SCSS, LESS"
+    points: "JavaScript (ES6+), TypeScript, Golang, Python, PHP, CSS3, SCSS, LESS"
   - category: "Frameworks & Tools"
-    items: "React, Vue.js, NestJS, ExpressJS, Gatsby, Django, Webpack, Gulp, D3"
+    points: "React, Vue.js, NestJS, ExpressJS, Django, Webpack, Gulp, D3"
   - category: "Infrastructure & Cloud"
-    items: "Docker, AWS (ElastiCache), Redis Cloud, Nginx, MongoDB, PostgreSQL, Git, GitLab CI"
+    points: "Docker, AWS (ElastiCache), MongoDB, PostgreSQL, Git, GitLab CI"
 
 experience:
   - company: "EEL Datasystems"
-    title: "Software Engineer"
+    title: "Contract Software Engineer"
     dates: "Apr 2026 – Present"
     highlights:
-      - "Collaborate within a 5-person engineering team to maintain and optimize EEL's EDI interchange server and SFTP servers for mission-critical business transactions."
+      - "Collaborate within a 5-person engineering team to maintain and optimize EEL's EDI and SFTP servers for critical business transactions."
       - "Streamlined production release processes, delivering the first EDI API production deployment within 3 months and establishing a consistent weekly/bi-weekly deployment cadence."
-      - "Lead the infrastructure migration of EDI server caching environments from Redis Cloud to Amazon ElastiCache to increase availability and reliability."
+      - "Lead the infrastructure migration of EDI server caching environments from Redis Cloud to Amazon ElastiCache to maintain availability while reducing costs."
       - "Enhance API server performance and customer-facing web user interfaces to elevate overall product experience."
 
   - company: "Fully Involved Logistics, LLC."
     title: "Operations Manager"
     dates: "March 2025 – April 2026"
     highlights:
-      - "Scheduled crews and trucks for approximately 20 moving and packing jobs per month."
-      - "Managed website and phone services."
-      - "Managed Meta and Google ads."
+      - "Managed logistics including staff, supplies, and trucks for approx 20 moving or packing jobs per month."
+      - "Maintained website and phone services for brand visibility and customer communication."
+      - "Managed Meta and Google ads to maintain brand presence and customer visibility."
 
   - company: "Montra Technologies Inc."
     title: "Senior Software Engineer"
@@ -70,4 +70,4 @@ experience:
 
 education:
   - school: "University of Georgia"
-    degree: "Bachelor of Science (B.S.) in Biology"
+    degree: "Bachelor of Science (B.S.) in Biology 2007"

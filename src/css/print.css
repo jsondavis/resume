@@ -1,0 +1,46 @@
+
+@page { 
+  margin: 0;
+}
+
+@media print {
+  body { 
+    margin: 0;
+  }
+
+  .resume-container {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    page-break-after: always;
+    width: 216mm;
+    height: 279mm;
+  }
+
+  /** Padding area **/
+  .resume-container.padding-10mm { padding: 10mm }
+  .resume-container.padding-15mm { padding: 15mm }
+  .resume-container.padding-20mm { padding: 20mm }
+  .resume-container.padding-25mm { padding: 25mm }
+}
+
+/** For screen preview **/
+@media screen {
+  body { 
+    background: #e0e0e0;
+  }
+
+  .resume-container {
+    background: white;
+    box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
+    margin: 5mm auto;
+  }
+}
+
+/** Fix for Chrome issue #273306 **/
+@media print {
+  body { 
+    width: 216mm;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - {{ name }}</title>
+  <style>
+    {{ css }}
+    {{ print_styles }}
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+
+    <header>
+      <h1>{{ name }}</h1>
+      <div class="job-title">{{ title }}</div>
+      <div class="contact-info">
+        {% if phone %}<span>{{ phone }}</span>{% endif %}
+        {% if email %}<span><a href="mailto:{{ email }}">{{ email }}</a></span>{% endif %}
+        {% if github %}<span><a href="{{ github }}">{{ github }}</a></span>{% endif %}
+      </div>
+    </header>
+
+    <main>
+      {% if summary %}
+      <section class="summary">
+        <h2>Professional Summary</h2>
+        <p>{{ summary }}</p>
+      </section>
+      {% endif %}
+
+      {% if skills %}
+      <section class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+          {% for skill in skills %}
+          <div class="skill-category">{{ skill.category }}:</div>
+          <div>{{ skill.points }}</div>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+      {% if experience %}
+      <section class="experience">
+        <h2>Professional Experience</h2>
+
+        {% for job in experience %}
+        <article class="entry">
+          <div class="entry-header">
+            <span>{{ job.company }}</span>
+          </div>
+          <div class="entry-subheader">
+            <span>{{ job.title }}</span>
+            <span class="date-location">{{ job.dates }}</span>
+          </div>
+          <ul>
+            {% for highlight in job.highlights %}
+            <li>{{ highlight }}</li>
+            {% endfor %}
+          </ul>
+        </article>
+        {% endfor %}
+      </section>
+      {% endif %}
+
+      {% if education %}
+      <section class="education">
+        <h2>Education</h2>
+
+          {% for edu in education %}
+        <article class="entry">
+          <div class="entry-header">
+            <span>{{ edu.school }}</span>
+          </div>
+          <div class="entry-subheader">
+            <span>{{ edu.degree }}</span>
+          </div>
+        </article>
+        {% endfor %}
+      </section>
+      {% endif %}
+    </main>
+  </div>
+</body>
+</html>
